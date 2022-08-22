@@ -1,0 +1,107 @@
+.card{
+    
+    width: 580px;
+    height: 490px;
+    margin: auto;
+    margin-top: 12px;
+    background-color: rgb(169, 240, 227);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card input{
+    display: block;
+    margin: auto;
+    width: 500px;
+    outline: none;
+    border-radius: 16px;
+    padding: 5px;
+    top: 50px;
+    margin-top: 10px;
+    border: 2px solid rgb(159, 234, 224);
+   
+}
+.Info h1{
+    font-size: 42px;
+}
+.Info {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 68%;
+    z-index: 4;
+}
+.street{
+    font-size: 55px;
+    animation: rotates 3s linear infinite alternate;
+}
+
+@keyframes rotates {
+    from {    
+     transform: translateX(-0.8rem);
+    }
+    to {
+      transform: translateX(0.5rem);
+    }
+}
+.temp{
+    margin-top: 30px;
+}
+.temp h2{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   font-weight: 600;
+   animation: bounce 2.1s ease-in-out infinite;
+}
+.temp h6{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+@keyframes bounce{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.wave.-one {
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: #fff;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top: -25rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+}
+.wave.-two{
+    opacity: 0.1;
+    animation: drift 7000ms infinite linear;
+    z-index: 3 important;
+}
+.wave.-three {
+    animation: drift 7000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+}
+@keyframes drift {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+.errmsg{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
